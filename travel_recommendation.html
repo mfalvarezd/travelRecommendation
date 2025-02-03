@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travels Home Page</title>
+    
+        
+    <!-- Enlace a FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="logo">
+                    <img src="resourcers/logo.png" alt="Travel Recommendation Logo">
+                    <p>Travels</p>
+                </div>
+                <div>
+                    <a href="#home">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </div>
+                <div class="searchContainer">
+                    <input type="text" id="searchInput" placeholder="Search...">
+                    
+                    <button id="searchButton">Search</button>
+                    <button id="clearButton"type="button">Clear</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="home-container" id="home">
+        <!-- Introducción -->
+        <div class="intro">
+            <h1>Welcome to Our Travel Recommendation Website</h1>
+            <p>Discover the best destinations around the world. Plan your next adventure with us!</p>
+        </div>
+        <div id="recommendations" class="recommendations-container"></div>
+
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

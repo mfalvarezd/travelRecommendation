@@ -1,0 +1,248 @@
+/* Estilos generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo de respaldo */
+    overflow: hidden; /* Evita el scroll en el body */
+}
+
+/* Contenedor principal con imagen de fondo */
+.home-container {
+    background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1544&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Usar viewport height para cubrir toda la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative; /* Para posicionar elementos hijos */
+}
+
+/* Barra de navegación */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(184, 178, 178, 0.7); /* Fondo semitransparente */
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500; /* Texto un poco más grueso */
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.searchContainer input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 200px; /* Ancho fijo para la barra de búsqueda */
+    transition: box-shadow 0.3s ease;
+}
+
+.searchContainer input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Efecto de enfoque */
+}
+
+.searchContainer button {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.searchContainer button:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+/* Introducción */
+.intro {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente más oscuro */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 80px; /* Espacio para la barra de navegación */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.intro h1 {
+    font-size: 2.8rem; /* Tamaño de fuente más grande */
+    margin-bottom: 15px;
+    font-weight: 600; /* Texto más grueso */
+}
+
+.intro p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Mejor espaciado entre líneas */
+}
+
+/* Iconos de redes sociales */
+.social-icons {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #FFA500;
+    font-size: 28px; /* Tamaño de iconos más grande */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007BFF; /* Cambia el color al pasar el mouse */
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el logo y el texto */
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Logo redondeado */
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: rotate(360deg); /* Efecto de rotación al pasar el mouse */
+}
+
+.logo p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+/* Contenedor de recomendaciones */
+.recommendations-container {
+    position: fixed; /* Fija el contenedor a la pantalla */
+    top: 60px; /* Lo coloca en la parte superior */
+    right: 0; /* Lo coloca en el lado derecho */
+    width: 300px; /* Ancho fijo para el contenedor */
+    height: calc(100vh - 60px); /* Ocupa toda la altura de la pantalla menos el espacio superior */
+    padding: 20px;
+    overflow-y: auto; /* Permite hacer scroll si hay más contenido */
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente */
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1); /* Sombra en el lado izquierdo */
+    color: black;
+    
+}
+
+/* Estilos para las cards */
+.card {
+    width: 100%; /* Ajusta el ancho del card al contenedor */
+    margin-bottom: 15px; /* Espacio entre cards */
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    overflow: visible; /* Para que el contenido no se salga del card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    margin-bottom: 100px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    border-radius: 10px;
+    width: 100%; /* Imagen ocupa todo el ancho del card */
+    height: 150px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+.card h3 {
+    margin: 10px 15px; /* Espaciado alrededor del título */
+    font-size: 1.2em; /* Tamaño de fuente del título */
+    color: #333; /* Color del texto */
+}
+
+.card p {
+    margin: 0 15px 15px; /* Espaciado alrededor del párrafo */
+    font-size: 0.9em; /* Tamaño de fuente del párrafo */
+    color: #666; /* Color del texto */
+}
+
+/* Estilos específicos para las cards de recomendaciones */
+.recommendation-card {
+    width: 100%; /* Ajusta el ancho del card al contenedor */
+    margin-bottom: 15px; /* Espacio entre cards */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    border-radius: 10px;
+    overflow: hidden; /* Para que el contenido no se salga del card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-image {
+    width: 100%;
+    height: 150px; /* Altura fija para la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+}
+
+.recommendation-title {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #333;
+}
+
+.recommendation-description {
+    font-size: 0.9rem;
+    margin: 0 15px 15px;
+    color: #555;
+}

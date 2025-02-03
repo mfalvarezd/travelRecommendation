@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+        /* Estilos generales */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?q=80&w=1544&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Barra de navegación */
+        header {
+            background-color: #333;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .logo p {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+        }
+
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav a:hover {
+            color: #007bff; /* Cambia el color al pasar el mouse */
+        }
+
+        /* Contenido principal */
+        .about-container {
+            
+            padding: 120px 20px 40px; /* Espacio para la barra de navegación */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-container h1 {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .about-container p {
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px;
+            color: #555;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        /* Sección del equipo */
+        .team-section {
+            margin-top: 60px;
+        }
+
+        .team-section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav>
+            <div class="nav">
+                <div class="logo">
+                    <img src="resourcers/logo.png" alt="Travel Recommendation Logo" />
+                    <p>Travels</p>
+                </div>
+                <div>
+                    <a href="travel_recommendation.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="about-container">
+        <h1>About Us</h1>
+        <p>
+            Welcome to <strong>Travels</strong>, your ultimate guide to exploring
+            the world. We are a passionate team of travel enthusiasts dedicated to
+            helping you discover the most amazing destinations. Whether you're
+            looking for adventure, relaxation, or cultural experiences, we've got
+            you covered. Our mission is to make travel planning easy, fun, and
+            accessible for everyone.
+        </p>
+
+        <!-- Sección del equipo -->
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <!-- Miembro 1 -->
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="John Doe" />
+                    <h3>John Doe</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <!-- Miembro 2 -->
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Jane Smith" />
+                    <h3>Jane Smith</h3>
+                    <p>Travel Consultant</p>
+                </div>
+                <!-- Miembro 3 -->
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Emily Johnson" />
+                    <h3>Emily Johnson</h3>
+                    <p>Marketing Manager</p>
+                </div>
+                <!-- Miembro 4 -->
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/100" alt="Michael Brown" />
+                    <h3>Michael Brown</h3>
+                    <p>Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
